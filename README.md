@@ -32,7 +32,7 @@ Docker Compose for managing multi-container deployment
 
 1️⃣ Clone the repository
 
-git clone https://github.com/your-repo/finance-dashboard.git
+git clone https://github.com/finance-dashboard/finance-dashboard.git
 cd finance-dashboard
 
 2️⃣ Start with Docker
