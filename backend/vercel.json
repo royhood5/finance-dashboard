@@ -1,15 +1,9 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "main.py", "use": "@vercel/python" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "main.py" }
-    ],
-    "build": {
-      "env": {
-        "PIP_NO_BINARY": ":all:"
-      }
-    }
-  }
-  
+  "version": 2,
+  "builds": [
+    { "src": "main.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "main.py" }
+  ]
+}
