@@ -4,7 +4,7 @@ import yfinance as yf
 
 app = FastAPI()
 
-origins = ["http://localhost:3000", getenv("FRONTEND_URL")]
+origins = ["http://localhost:3000", getenv("FRONTEND_URL"),"https://finance-dashboard-bay.vercel.app/"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
