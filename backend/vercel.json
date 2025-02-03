@@ -13,6 +13,7 @@
         "src": "requirements.txt",
         "use": "@vercel/python"
       }
+      
     ],
     "routes": [
       {
