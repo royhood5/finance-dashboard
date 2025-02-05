@@ -18,9 +18,9 @@ export default function Home() {
   const currentYear = new Date().getFullYear() - 1;
   const years = Array.from({ length: 10 }, (_, i) => currentYear - i);
 
-  const [selectedStocks, setSelectedStocks] = useState<{ [key: string]: string }>(
-    chartTypes.reduce((acc, type) => ({ ...acc, [type]: "AAPL" }), {})
-  );
+  const [selectedStocks, setSelectedStocks] = useState<{
+    [key: string]: string;
+  }>(chartTypes.reduce((acc, type) => ({ ...acc, [type]: "AAPL" }), {}));
 
   const [selectedYears, setSelectedYears] = useState<{ [key: string]: number }>(
     chartTypes.reduce((acc, type) => ({ ...acc, [type]: currentYear }), {})
@@ -51,7 +51,7 @@ export default function Home() {
     <div className="flex flex-col w-full items-center p-1">
       <PageTitle title="Dashboard" />
 
-      <section className="grid grid-cols-2 gap-4 w-full mt-6">
+      <section className="grid grid-cols-2 sm:grid-cols-1 gap-4 sm:gap-2 w-full mt-6 sm:mt-3">
         {chartTypes.map((chartType) => (
           <div
             key={chartType}
